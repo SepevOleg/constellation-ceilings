@@ -108,7 +108,7 @@
   height: 41px;
   border-radius: 100%;
   top: -19px;
-  touch-action: none;
+  outline: none;
 }
 .main-calc_right__sum {
   font-size: 600;

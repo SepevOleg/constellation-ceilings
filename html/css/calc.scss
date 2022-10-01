@@ -87,6 +87,7 @@
         background: #8c188d;
         height: 3px;
         border: none;
+        outline: none;
       }
       &__after{
         font-style: normal;
@@ -111,7 +112,7 @@
 
         border-radius: 100%;
         top: -19px;
-        touch-action: none;
+        outline: none;
       }
     }
     &_right{
