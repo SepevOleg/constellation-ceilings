@@ -1,0 +1,71 @@
+.contact{
+  &-wrapper{
+    width: 1300px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10rem;
+    &_box{
+      background: #fff;
+      border: 2px solid #92278f;
+      box-sizing: border-box;
+      box-shadow: 0 0 7.32712px 1.46542px rgb(0 0 0 / 5%);
+      border-radius: 9px;
+      padding: 30px;
+      &__heading{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 33px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #222;
+      }
+      &__text{
+        margin-top: -20px;
+        margin-bottom: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #222;
+      }
+      &__buts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      &__telega{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26rem;
+        height: 5.5rem;
+
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        background: #08c;
+        box-shadow: 0 0 10px 5px rgb(0 136 204 / 50%);
+        border-radius: 9px;
+      }
+      &__viber{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26rem;
+        height: 5.5rem;
+
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        background: #7360f2;
+        box-shadow: 0 0 10px 5px rgb(115 96 242 / 50%);
+        border-radius: 9px;
+      }
+    }
+  }
+}

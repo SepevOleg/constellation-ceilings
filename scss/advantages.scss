@@ -1,0 +1,60 @@
+.advantages{
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  padding: 8rem;
+  &-header{
+    &_heading{
+      text-align: center;
+      font-weight: 900;
+      font-size: 3rem;
+    }
+  }
+  &-aside{
+    display: flex;
+    flex-wrap: wrap;
+    &_box{
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 30px;
+      width: calc(50% - 30px);
+      padding: 30px 40px;
+      background: #fff;
+      box-shadow: 0 0 7.32712px 1.46542px rgb(0 0 0 / 5%);
+      border-radius: 8.31849px;
+      &__title{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 2.1rem;
+        line-height: 2.4rem;
+        color: #92278f;
+        gap: 1.5rem;
+        img{
+          background-color: #92278f;
+          padding: 1rem 1rem;
+        }
+      }
+      &__subtitle{
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-top: 2rem;
+        p{
+          gap: 1.8rem;
+        }
+      }
+      &__list{
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px){
+  .container{
+    width: 96rem;
+  }
+  .advantages{
+    padding: 6rem;
+  }
+}

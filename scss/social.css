@@ -1,0 +1,32 @@
+.social {
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  z-index: 299;
+}
+.social-fixed_viber {
+  border-radius: 3rem 0 0 3rem;
+  display: flex;
+  width: 7rem;
+  transform: translateX(30px);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: 0.59s;
+  background: #7D3DAF;
+}
+.social-fixed_viber:hover {
+  transform: translateX(0px);
+}
+.social-fixed_telega {
+  border-radius: 3rem 0 0 3rem;
+  display: flex;
+  width: 7rem;
+  transform: translateX(30px);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: 0.59s;
+  background: #2da4e1;
+}
+.social-fixed_telega:hover {
+  transform: translateX(0px);
+}/*# sourceMappingURL=social.css.map */

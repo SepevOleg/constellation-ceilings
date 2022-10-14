@@ -1,0 +1,83 @@
+.block-popup{
+  position: absolute;
+  background: #8f0e6138;
+  width: 30%;
+  height: 27rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 1.2rem 2rem -1rem;
+  text-align: center;
+  display: none;
+  z-index: 30;
+  p{
+    width: 88%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  span{
+    position: absolute;
+    top: -0.7rem;
+    right: 1.2rem;
+    cursor: pointer;
+    font-size: 4rem;
+  }
+  input {
+    width: 54%; 
+    margin-bottom: 1rem;
+    border: 1px solid #1f1f1f45;
+    border-radius: 4px;
+    padding: 1.2rem 1.9rem;
+    text-align: center;
+  }
+  &_sub{
+    cursor: pointer;
+    &:hover {
+      background-color: #f9009e;
+    }
+    &:active {
+      background-color: #d52a94;
+      -webkit-transform: translateY(1px);
+              transform: translateY(1px);
+    }
+  }
+} 
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.78);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5;
+}
+.popup {
+  position: fixed; /* Задаём фиксированную позицию блоку элементов всплывающего окна */
+  display: none; /* Скрываем блок до отправки формы */
+  justify-content: center; /* Горизонтальное выравнивание элементов внутри блока */
+  align-items: center; /* Вертикальное выравнивание элементов внутри блока */
+  width: 100%; /* Ширина блока 100% от ширины родительского блока */
+  height: 100%; /* Высота блока 100% от высоты родительского блока */
+  top: 0; /* Прижимаем блок к верхнему краю родительского блока */
+  opacity: 0; /* Делает блок невидимым */
+  }
+  .active {
+  display: flex; /* Делаем все дочерние элементы flex-элементами */
+  opacity: 1; /* Делает блок видимым на 100% */
+  transition: opacity 1s; /* Плавный переход в 100% видимость блока */
+  }
+  .thanks {
+  position: relative; /* Устанавливает родительскую позицию */
+  text-align: center; /* Выравнивание текста по центру */
+  width: 440px; /* Ширина блока 440px */
+  max-width: 100%; /* Максимальная ширина блока не может быть более 100% */
+  border: 1px solid #00000038; /* Рамка вокруг блока */
+  border-radius: 10px; /* Закругление блока на 4px */
+  background-color: #ffffffeb; /* Цвет фона */
+  }

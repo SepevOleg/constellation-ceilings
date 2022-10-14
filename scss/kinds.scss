@@ -1,0 +1,86 @@
+.kinds{
+  width: 100%;
+  padding: 4rem;
+  background-color: rgb(199, 194, 198);
+  &-holdex{
+    text-align: center;
+    &_heading{
+      font-size: xx-large;
+    }
+    &_subtitle{
+      font-weight: 400;
+      font-size: 1.6rem;
+      width: 90%;
+      margin: 2rem 0rem 0rem 5rem;
+    }
+  }
+  &-box{
+    border-radius: 8.31849px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.9rem;
+    cursor: pointer;
+    &_inner{
+      height: 52rem;
+      padding-top: 2rem;
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 5%;
+      box-sizing: border-box;
+      margin-left: 3rem;
+      &__img{
+        border-radius: 21%;
+      }
+      &__header{
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #92278f;
+        line-height: 2.8rem;
+        margin-top: 1rem;
+      }
+      &__text{
+        margin: 1rem 1rem 0rem 1rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+.owl-carousel{
+  padding-top: 7rem;
+}
+@media screen and (max-width: 1250px){
+  .container{
+    width: 96rem;
+  }
+  .kinds{
+    &-holdex{
+      &_subtitle{
+        margin: 2rem 0rem 2rem 5rem;
+      }
+    }
+    &-box{
+      &_inner{
+        height: 59rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px){
+  .container{
+    width: 74rem;
+  }
+  .kinds{
+    &-holdex{
+      &_heading{
+        font-size: 2.6rem;
+      }
+      &_subtitle{
+        width: 82%;
+      }
+    }
+  }
+}

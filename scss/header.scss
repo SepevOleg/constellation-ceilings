@@ -1,0 +1,127 @@
+@import url(/css/variber.css);
+.header{
+  width: 98%;
+  padding-top: 1rem;
+  background: #fff;
+  position: fixed;
+  z-index: 3;
+  &-menu{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &_left{
+      &__heading{
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        color: #8c188d;
+        margin-top: 0.9rem;
+      }
+    }
+    &_right{
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      opacity: 0.9s;
+      &__phone{
+        font-weight: 800;
+        font-size: 2rem;
+        color:#8c188d;
+        margin-left: 1rem;
+        &:hover{
+        color: #f9009e;
+        }
+      }
+      &__tel{
+        display: flex;
+        align-items: center;
+      }
+    }
+    &_br-btn{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 111.2%;
+      color: rgb(12, 11, 11);
+      border-radius: 0.9rem;
+      width: 21rem;
+      max-width: 100%;
+      line-height: 5rem;
+      border: 3px solid #8c188d;
+      &:hover {
+        background-color: #f9009e;
+      }
+      &:active {
+        background-color: #d52a94;
+        -webkit-transform: translateY(1px);
+                transform: translateY(1px);
+      }
+    }
+  }
+hr{
+  margin-top: 1rem;
+  opacity: 0.3;
+}
+  &-topmenu{
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    &_list{
+      display: flex;
+      align-items: center;
+      gap: 16.1rem;
+      &__items{
+        display: block;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #000;
+        opacity: 1;
+        transition: .25s;
+        &:after {
+          background-color: #d52a94;
+          display: block;
+          content: "";
+          height: 2px;
+          width: 0%;
+          -webkit-transition: width .3s ease-in-out;
+          -moz--transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px){
+  .container{
+    width: 96rem;
+  }
+  .header{
+    &-topmenu{
+      &_list{
+        gap: 11.1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px){
+  .container{
+    width: 74rem;
+  }
+  .header{
+    &-topmenu{
+      &_list{
+        gap: 7.1rem;
+        &__items{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

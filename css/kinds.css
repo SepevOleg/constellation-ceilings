@@ -1,0 +1,58 @@
+.kinds {
+  width: 100%;
+  padding: 4rem;
+  background-color: rgb(199, 194, 198);
+}
+.kinds-holdex {
+  text-align: center;
+}
+.kinds-holdex_heading {
+  font-size: xx-large;
+}
+.kinds-holdex_subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 90%;
+  margin: 2rem 0rem 0rem 5rem;
+}
+.kinds-box {
+  border-radius: 8.31849px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.9rem;
+  cursor: pointer;
+}
+.kinds-box_inner {
+  height: 52rem;
+  padding-top: 2rem;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 3rem;
+}
+.kinds-box_inner__img {
+  border-radius: 21%;
+}
+.kinds-box_inner__header {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #92278f;
+  line-height: 2.8rem;
+  margin-top: 1rem;
+}
+.kinds-box_inner__text {
+  margin: 1rem 1rem 0rem 1rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.owl-carousel {
+  padding-top: 7rem;
+}

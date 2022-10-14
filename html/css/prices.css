@@ -1,0 +1,42 @@
+.prices {
+  width: 100%;
+  height: 50rem;
+  padding-top: 5rem;
+}
+.prices-row_span__desc {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.prices-row_span__item {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.prices-row tr {
+  opacity: 0.9s;
+}
+.prices-row tr:hover {
+  background-color: #922c9e;
+}
+.prices-row_table__title {
+  font-weight: 400;
+  font-size: 1.7rem;
+  padding-left: 1rem;
+}
+.prices-row_table__subtitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.prices-row_table__wrapper {
+  width: 100%;
+  height: 26vh;
+}
+.prices-row_caption {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.prices h3 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=prices.css.map */

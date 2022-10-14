@@ -1,0 +1,120 @@
+@import url(/css/variber.css);
+.header {
+  width: 98%;
+  padding-top: 1rem;
+  background: #fff;
+  position: fixed;
+  z-index: 3;
+}
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+.header-menu_left__heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  color: #8c188d;
+  margin-top: 0.9rem;
+}
+.header-menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  opacity: 0.9s;
+}
+.header-menu_right__phone {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #8c188d;
+  margin-left: 1rem;
+}
+.header-menu_right__phone:hover {
+  color: #f9009e;
+}
+.header-menu_right__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu_br-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 111.2%;
+  color: rgb(12, 11, 11);
+  border-radius: 0.9rem;
+  width: 21rem;
+  max-width: 100%;
+  line-height: 5rem;
+  border: 3px solid #8c188d;
+}
+.header-menu_br-btn:hover {
+  background-color: #f9009e;
+}
+.header-menu_br-btn:active {
+  background-color: #d52a94;
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+}
+.header hr {
+  margin-top: 1rem;
+  opacity: 0.3;
+}
+.header-topmenu {
+  width: 100%;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-topmenu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16.1rem;
+}
+.header-topmenu_list__items {
+  display: block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #000;
+  opacity: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.header-topmenu_list__items:after {
+  background-color: #d52a94;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.header-topmenu_list__items:hover:after, .header-topmenu_list__items:focus:after {
+  width: 100%;
+}

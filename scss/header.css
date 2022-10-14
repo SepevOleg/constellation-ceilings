@@ -1,0 +1,116 @@
+@import url(/css/variber.css);
+.header {
+  width: 98%;
+  padding-top: 1rem;
+  background: #fff;
+  position: fixed;
+  z-index: 3;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-menu_left__heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  color: #8c188d;
+  margin-top: 0.9rem;
+}
+.header-menu_right {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  opacity: 0.9s;
+}
+.header-menu_right__phone {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #8c188d;
+  margin-left: 1rem;
+}
+.header-menu_right__phone:hover {
+  color: #f9009e;
+}
+.header-menu_right__tel {
+  display: flex;
+  align-items: center;
+}
+.header-menu_br-btn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 111.2%;
+  color: rgb(12, 11, 11);
+  border-radius: 0.9rem;
+  width: 21rem;
+  max-width: 100%;
+  line-height: 5rem;
+  border: 3px solid #8c188d;
+}
+.header-menu_br-btn:hover {
+  background-color: #f9009e;
+}
+.header-menu_br-btn:active {
+  background-color: #d52a94;
+  transform: translateY(1px);
+}
+.header hr {
+  margin-top: 1rem;
+  opacity: 0.3;
+}
+.header-topmenu {
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+}
+.header-topmenu_list {
+  display: flex;
+  align-items: center;
+  gap: 16.1rem;
+}
+.header-topmenu_list__items {
+  display: block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #000;
+  opacity: 1;
+  transition: 0.25s;
+}
+.header-topmenu_list__items:after {
+  background-color: #d52a94;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.header-topmenu_list__items:hover:after, .header-topmenu_list__items:focus:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 96rem;
+  }
+  .header-topmenu_list {
+    gap: 11.1rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .container {
+    width: 74rem;
+  }
+  .header-topmenu_list {
+    gap: 7.1rem;
+  }
+  .header-topmenu_list__items {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=header.css.map */

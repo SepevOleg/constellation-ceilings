@@ -1,0 +1,35 @@
+.catalog{
+  width: 100%;
+  background-color: rgb(252, 251, 251);
+  padding-top: 2rem;
+  &-row{
+    width: auto;
+    &_heading{
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+  &-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &_box{
+      width: 24%;
+      padding-top: 6rem;
+      &__fon{
+        border-radius: 1.5rem;
+      }
+      &__desc{
+        font-weight: 700;
+        font-size: 1.7rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      &__col{
+        margin-top: 2rem;
+        color:rgb(200, 9, 9)
+      }
+    }
+  }  
+}
