@@ -44,7 +44,9 @@
   .benefits{
     height: 52rem;
     &-wrapper{
-      &_box{
+      &_box{    
+        justify-content: unset;
+        gap: 3.4rem;
         &__wrap{
           padding: 3rem 2rem;
         }
@@ -67,6 +69,49 @@
         &__wrap{
           padding: 2rem 1rem;
          width: calc(25% - 8px) ; 
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .container{
+    width: 48rem;
+  }
+  .benefits{
+    height: 89rem;
+    padding-top: 15rem;
+    &-wrapper{
+      &_box{
+        flex-wrap: wrap;
+        justify-content: initial;
+        gap: 1rem;
+        &__wrap{
+          width: calc(54% - 25px);
+          padding: 2rem 2rem;
+        }
+        &__text{
+          line-height: 2.3rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 390px;
+    padding: 0 15px;
+  }
+  .benefits{
+    height: 125rem;
+    padding-top: 4rem;
+    &-wrapper{
+      &_box{
+        gap: 4rem;
+        &__wrap{
+          width: 100%;
+          text-align: center;
         }
       }
     }

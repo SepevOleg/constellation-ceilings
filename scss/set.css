@@ -9,7 +9,7 @@
   font-size: 3.3rem;
   line-height: 5rem;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   color: #222;
 }
 .set-wrapper {
@@ -116,7 +116,7 @@
   }
   .set {
     padding-top: 5rem;
-    height: 95vh;
+    height: 102vh;
   }
   .owl-carousel {
     padding-top: 0rem;
@@ -143,5 +143,10 @@
   }
   .set-wrapper_bot__price {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 48rem;
   }
 }/*# sourceMappingURL=set.css.map */

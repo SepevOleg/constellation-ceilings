@@ -1,4 +1,4 @@
-.contact-wrapper {
+.network-wrapper {
   width: 1300px;
   max-width: 100%;
   padding: 0 20px;
@@ -6,7 +6,7 @@
   position: relative;
   padding-bottom: 10rem;
 }
-.contact-wrapper_box {
+.network-wrapper_box {
   background: #fff;
   border: 2px solid #92278f;
   box-sizing: border-box;
@@ -14,16 +14,16 @@
   border-radius: 9px;
   padding: 30px;
 }
-.contact-wrapper_box__heading {
+.network-wrapper_box__heading {
   font-style: normal;
   font-weight: 800;
-  font-size: 33px;
-  line-height: 50px;
+  font-size: 3.3rem;
+  line-height: 5rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   color: #222;
 }
-.contact-wrapper_box__text {
+.network-wrapper_box__text {
   margin-top: -20px;
   margin-bottom: 40px;
   font-style: normal;
@@ -33,13 +33,13 @@
   text-align: center;
   color: #222;
 }
-.contact-wrapper_box__buts {
+.network-wrapper_box__buts {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.contact-wrapper_box__telega {
+.network-wrapper_box__telega {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
   box-shadow: 0 0 10px 5px rgba(0, 136, 204, 0.5);
   border-radius: 9px;
 }
-.contact-wrapper_box__viber {
+.network-wrapper_box__viber {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,4 +64,39 @@
   background: #7360f2;
   box-shadow: 0 0 10px 5px rgba(115, 96, 242, 0.5);
   border-radius: 9px;
-}/*# sourceMappingURL=contact.css.map */
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 48rem;
+  }
+  .network-wrapper {
+    padding-bottom: 5rem;
+  }
+  .network-wrapper_box__heading {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+  }
+  .network-wrapper_box__viber {
+    width: 18rem;
+  }
+  .network-wrapper_box__telega {
+    width: 18rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 390px;
+    padding: 0 15px;
+  }
+  .network-wrapper {
+    max-width: 109%;
+  }
+  .network-wrapper_box__telega {
+    width: 15rem;
+  }
+  .network-wrapper_box__viber {
+    width: 15rem;
+  }
+}/*# sourceMappingURL=network.css.map */

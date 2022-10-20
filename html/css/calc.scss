@@ -26,7 +26,7 @@
         margin-right: 1rem;
       }
       &__col{
-        color: #ababab;
+        color: #922c9e;
         cursor: pointer;
       }
     }
@@ -195,6 +195,75 @@
         &__btn{
           width: 17rem;
           font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .container{
+    width: 48rem;
+  }
+  .main{
+    &-calc{
+      &_nav{
+        &__list{
+          padding-top: 0;
+        }
+      }
+      &_box{
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 4rem;
+      }
+      &_left{
+        gap: 4rem;
+        p{
+          font-size: 2rem;
+        }
+      }
+      &_right{
+        &__sum{
+          padding: 2rem 3.4rem;
+        }
+      }
+      &_mid{
+        width: 42rem;
+      }
+      &_bottom{
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 390px;
+    padding: 0 15px;
+  }
+  .main{
+    &-calc{
+      &_heading{
+        h1{
+          font-size: 2rem;
+        }
+      }
+      &_left{
+        gap: 2rem;
+        font-size: 1.8rem;
+        p{
+          font-size: 1.8rem;
+        }
+        &__number{
+          font-size: 1.8rem;
+        }
+      }
+      &_mid{
+        width: 36rem;
+      }
+      &_right{
+        &__sum{
+          padding: 1rem 2.4rem;
         }
       }
     }

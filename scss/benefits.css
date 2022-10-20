@@ -42,6 +42,10 @@
   .benefits {
     height: 52rem;
   }
+  .benefits-wrapper_box {
+    justify-content: unset;
+    gap: 3.4rem;
+  }
   .benefits-wrapper_box__wrap {
     padding: 3rem 2rem;
   }
@@ -56,5 +60,44 @@
   .benefits-wrapper_box__wrap {
     padding: 2rem 1rem;
     width: calc(25% - 8px);
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 48rem;
+  }
+  .benefits {
+    height: 89rem;
+    padding-top: 15rem;
+  }
+  .benefits-wrapper_box {
+    flex-wrap: wrap;
+    justify-content: initial;
+    gap: 1rem;
+  }
+  .benefits-wrapper_box__wrap {
+    width: calc(54% - 25px);
+    padding: 2rem 2rem;
+  }
+  .benefits-wrapper_box__text {
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 390px;
+    padding: 0 15px;
+  }
+  .benefits {
+    height: 125rem;
+    padding-top: 4rem;
+  }
+  .benefits-wrapper_box {
+    gap: 4rem;
+  }
+  .benefits-wrapper_box__wrap {
+    width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=benefits.css.map */

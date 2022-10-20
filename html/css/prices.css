@@ -1,6 +1,6 @@
 .prices {
   width: 100%;
-  height: 50rem;
+  height: 80rem;
   padding-top: 5rem;
 }
 .prices-row_span__desc {
@@ -29,14 +29,96 @@
 }
 .prices-row_table__wrapper {
   width: 100%;
-  height: 26vh;
+  height: 14vh;
 }
 .prices-row_caption {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2rem;
 }
 .prices h3 {
   font-weight: 900;
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  margin: 2rem;
+  text-align: center;
+}
+.prices h4 {
+  margin: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 96rem;
+  }
+  .prices-row_span__desc {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .prices-row_span__item {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+  .prices-centr {
+    margin-top: 1rem;
+  }
+  .prices h3 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .container {
+    width: 74rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 48rem;
+  }
+  .prices {
+    height: 96rem;
+    padding-top: 3rem;
+  }
+  .prices-row_span {
+    text-align: center;
+  }
+  .prices-row_span__desc {
+    line-height: 3rem;
+  }
+  .prices-row_phone__pd {
+    display: flex;
+  }
+  .prices-row_caption {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  .prices-row_table__wrapper {
+    height: 18vh;
+  }
+  .prices-centr {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .prices h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 390px;
+    padding: 0 15px;
+  }
+  .prices-row_span__desc {
+    font-size: 1.8rem;
+  }
+  .prices-row_span__item {
+    font-size: 1.5rem;
+  }
+  .prices h3 {
+    font-size: 1.9rem;
+  }
 }/*# sourceMappingURL=prices.css.map */

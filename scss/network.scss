@@ -1,4 +1,4 @@
-.contact{
+.network{
   &-wrapper{
     width: 1300px;
     max-width: 100%;
@@ -16,10 +16,10 @@
       &__heading{
         font-style: normal;
         font-weight: 800;
-        font-size: 33px;
-        line-height: 50px;
+        font-size: 3.3rem;
+        line-height: 5rem;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 6rem;
         color: #222;
       }
       &__text{
@@ -65,6 +65,48 @@
         background: #7360f2;
         box-shadow: 0 0 10px 5px rgb(115 96 242 / 50%);
         border-radius: 9px;
+      }
+    }
+  }
+}
+@media (max-width: 720px){
+  .container{
+    width: 48rem;
+  }
+  .network{
+    &-wrapper{
+      padding-bottom: 5rem;
+      &_box{
+        &__heading{
+          font-size: 1.9rem;
+          line-height: 3rem;
+          margin-bottom: 4rem;
+        }
+        &__viber{
+          width: 18rem;
+        }
+        &__telega{
+          width: 18rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 390px;
+    padding: 0 15px;
+  }
+  .network{
+    &-wrapper{
+      max-width: 109%;
+      &_box{
+        &__telega{
+          width: 15rem;
+        }
+        &__viber{
+          width: 15rem;
+        }
       }
     }
   }
