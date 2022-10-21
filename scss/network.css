@@ -87,10 +87,16 @@
 }
 @media (max-width: 480px) {
   .container {
-    width: 390px;
+    width: 39rem;
     padding: 0 15px;
   }
+  .network {
+    padding-top: 2rem;
+  }
   .network-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     max-width: 109%;
   }
   .network-wrapper_box__telega {

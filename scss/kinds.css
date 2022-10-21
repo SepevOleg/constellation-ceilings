@@ -110,8 +110,12 @@
     width: 390px;
     padding: 0 15px;
   }
+  .kinds {
+    padding: 0rem;
+  }
   .kinds-holdex_heading {
     font-size: 2rem;
+    padding-top: 2rem;
   }
   .kinds-holdex_subtitle {
     font-size: 1.4rem;

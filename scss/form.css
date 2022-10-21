@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .block-popup {
-  position: absolute;
+  position: fixed;
   background: rgba(143, 14, 97, 0.2196078431);
   width: 30%;
   height: 27rem;
@@ -72,6 +72,14 @@
 
 .active {
   display: flex; /* Делаем все дочерние элементы flex-элементами */
-  opacity: 1; /* Делает блок видимым на 100% */
-  transition: opacity 1s; /* Плавный переход в 100% видимость блока */
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 390px;
+    padding: 0 15px;
+  }
+  .block-popup {
+    width: 100%;
+  }
 }/*# sourceMappingURL=form.css.map */

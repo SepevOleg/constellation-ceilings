@@ -1,5 +1,5 @@
 .block-popup{
-  position: absolute;
+  position: fixed;
   background: #8f0e6138;
   width: 30%;
   height: 27rem;
@@ -69,6 +69,13 @@
   }
   .active {
   display: flex; /* Делаем все дочерние элементы flex-элементами */
-  opacity: 1; /* Делает блок видимым на 100% */
-  transition: opacity 1s; /* Плавный переход в 100% видимость блока */
+  }
+  @media (max-width: 480px){
+    .container{
+      width: 390px;
+      padding: 0 15px;
+    }
+    .block-popup{
+      width: 100%;
+    }
   }

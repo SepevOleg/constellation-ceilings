@@ -64,3 +64,4 @@
 		else if (idRange==6){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 6;}
 		else if (idRange==5){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 5;}
 	}
+	
