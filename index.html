@@ -986,19 +986,20 @@
     </div>
   </div>
 </section>
-<section class="form"> 
+<form id="form" class="form"> 
   <div class="block-popup">
     <p>Оставьте Ваши данные и мы свяжемся с вами в ближайшее время</p>
-  <form>
-    <input type="text" name="name" placeholder="Введите Ваше имя">
-    <input type="tel" name="tel" placeholder="Введите Ваш номер">
-    <input class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
-  </form>
-  <span>&times;</span>
+    <div class="form-fills">
+      <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
+      <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
+      <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
+        Отправить
+      </button>
+    </div>
+    <span>&times;</span>
   </div>
-  <div class="overlay">
-</div>
-</section>
+  <div class="overlay"></div>
+</form>
 </body>
 <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 <script
@@ -1009,8 +1010,14 @@
 <script src="/js/kinds.js"></script>
 
 <script src="/html/js/calc.js"></script>
-
 <script src="/js/modal.js"></script>
 <script src="/js/form.js"></script>
 <script src="/js/hamburger.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="./js/email.js"></script>
+<script type="text/javascript">
+  (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('JZ_N27V_RT4rKlSeX');
+  })();
+</script>

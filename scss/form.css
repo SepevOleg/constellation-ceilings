@@ -3,20 +3,20 @@
   position: fixed;
   background: rgba(143, 14, 97, 0.2196078431);
   width: 30%;
-  height: 27rem;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 0 1.2rem 2rem -1rem;
   text-align: center;
   display: none;
   z-index: 30;
 }
 .block-popup p {
-  width: 88%;
+  width: 100%;
   font-size: 2rem;
   font-weight: 500;
   color: #ccc;
@@ -38,7 +38,9 @@
   text-align: center;
 }
 .block-popup_sub {
+  transition: .2s;
   cursor: pointer;
+  background-color: #c22388;
 }
 .block-popup_sub:hover {
   background-color: #f9009e;
@@ -72,6 +74,24 @@
 
 .active {
   display: flex; /* Делаем все дочерние элементы flex-элементами */
+}
+.form .form-fills {
+  display: flex;
+  flex-direction: column;
+}
+.form .form-fills input, .form .form-fills button {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(31, 31, 31, 0.2705882353);
+  border-radius: 4px;
+  padding: 1.2rem 1.9rem;
+  text-align: center;
+}
+.form .form-fills input {
+  width: 100%;
+}
+.form .form-fills button {
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 480px) {
