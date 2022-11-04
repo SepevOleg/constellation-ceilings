@@ -53,11 +53,18 @@
       margin-bottom: 2rem;
     }
     &_text{
-      width: 51%;
+      display: flex;
+      gap: 4rem;
       &__list{
         list-style: none;
         font-weight: 500;
         font-size: 1.4rem;
+      }
+    }
+    &_right{
+      &__img{
+        width: 95%;
+        border-radius: 20%;
       }
     }
   }
@@ -71,5 +78,20 @@
       font-weight: 400;
       font-size: 1.5rem;
     }
+  }
+}
+i{
+  color: rgb(234, 38, 194);
+    background-color: transparent;
+    text-decoration: none;
+  &:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration:dotted;
+  }
+  &:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
   }
 }

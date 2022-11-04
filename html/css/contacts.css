@@ -47,12 +47,17 @@
   margin-bottom: 2rem;
 }
 .main-description_text {
-  width: 51%;
+  display: flex;
+  gap: 4rem;
 }
 .main-description_text__list {
   list-style: none;
   font-weight: 500;
   font-size: 1.4rem;
+}
+.main-description_right__img {
+  width: 95%;
+  border-radius: 20%;
 }
 .main-information {
   padding-top: 2rem;
@@ -64,4 +69,21 @@
 .main-information p {
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+i {
+  color: rgb(234, 38, 194);
+  background-color: transparent;
+  text-decoration: none;
+}
+i:hover {
+  color: red;
+  background-color: transparent;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+i:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }/*# sourceMappingURL=contacts.css.map */

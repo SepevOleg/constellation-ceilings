@@ -1,26 +1,25 @@
 @charset "UTF-8";
 .block-popup {
   position: fixed;
-  background: rgba(143, 14, 97, 0.2196078431);
+  background: #f6f8fc;
   width: 30%;
-  height: auto;
+  height: 47rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  padding: 2rem;
+  border-radius: 14.5rem 2rem 5rem 5rem;
+  border: 4px solid #c41de5;
+  padding: 1rem;
   box-shadow: 0 1.2rem 2rem -1rem;
   text-align: center;
   display: none;
   z-index: 30;
 }
 .block-popup p {
-  width: 100%;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 500;
-  color: #ccc;
-  margin-bottom: 2rem;
+  color: rgb(0, 0, 0);
+  margin-top: 7rem;
 }
 .block-popup span {
   position: absolute;
@@ -30,30 +29,27 @@
   font-size: 4rem;
 }
 .block-popup input {
-  width: 54%;
-  margin-bottom: 1rem;
+  width: 76%;
+  margin-bottom: 3rem;
   border: 1px solid rgba(31, 31, 31, 0.2705882353);
   border-radius: 4px;
   padding: 1.2rem 1.9rem;
   text-align: center;
 }
 .block-popup_sub {
-  transition: .2s;
+  width: 72%;
+  height: 7rem;
+  border-radius: 65px;
+  background: rgba(157, 0, 255, 0.4784313725);
+  font-weight: 500;
+  font-size: 2rem;
   cursor: pointer;
-  background-color: #c22388;
-}
-.block-popup_sub:hover {
-  background-color: #f9009e;
-}
-.block-popup_sub:active {
-  background-color: #d52a94;
-  transform: translateY(1px);
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(51, 51, 51, 0.78);
+  background: rgba(62, 21, 72, 0.78);
   position: fixed;
   top: 0;
   left: 0;
@@ -75,23 +71,12 @@
 .active {
   display: flex; /* Делаем все дочерние элементы flex-элементами */
 }
-.form .form-fills {
+
+.form-fills {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-}
-.form .form-fills input, .form .form-fills button {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border: 1px solid rgba(31, 31, 31, 0.2705882353);
-  border-radius: 4px;
-  padding: 1.2rem 1.9rem;
-  text-align: center;
-}
-.form .form-fills input {
-  width: 100%;
-}
-.form .form-fills button {
-  margin-bottom: 3rem;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
