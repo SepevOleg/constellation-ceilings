@@ -16,15 +16,33 @@
   <link rel="stylesheet" href="/carosel/owl.carousel.min.css">
   <link rel="stylesheet" href="/carosel/owl.theme.default.min.css">
   <link rel="stylesheet" href="/scss/form.css">
+  <link rel="stylesheet" href="/html/css/input.css">
+  
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(91085294, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91085294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <body>
   <header class="header">
     <div class="container">
       <div class="header-menu">
         <div class="header-menu_left">
-          <h1 class="header-menu_left__heading">Созвездие<br>Потолков</h1>
+          <h1 class="header-menu_left__heading"><a href="/index.html">Созвездие<br>Потолков</h1></a>
         </div>
         <div class="header-menu_right">
           <div class="header-menu_right__tel">
@@ -86,6 +104,8 @@
         <div class="main-calc_left__number" id="number">25</div>
           <p><strong>м<sup>2</sup></strong></p>
         </div>
+        <div id=""></div>
+        <input type="range" name="slider-2" id="slider-2" value="20" min="5" max="50" step="1">   
         <div class="main-calc_mid">
           <div class="main-calc_mid__wrap">
             <div class="main-calc_mid__before">5</div>
@@ -99,6 +119,10 @@
         <div class="main-calc_right__sum"><strong id="rezultatRange">11380</strong></div>
         </div>
       </div>
+    </div>
+    <a data-remodal-target="open-modal" class="main-calc_bottom ">
+        <button class="main-calc_bottom__btn open-modal">Оставить заявку</button>
+      </a>
     </div>
   </div>
 </main>

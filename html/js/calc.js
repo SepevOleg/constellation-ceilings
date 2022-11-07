@@ -22,7 +22,7 @@
 		let count = range.value
 		square.textContent = count
 		range.addEventListener('input', (element) => {
-			const price = 700
+			const price = 1200
 			let value = element.target.value
 			console.log(value)
 			value = price * value
@@ -73,11 +73,11 @@
 		else if (idRange==14){ document.getElementById('rezultatRange').innerHTML = 8400; document.getElementById('number').innerHTML = 14;}
 		else if (idRange==13){ document.getElementById('rezultatRange').innerHTML = 7800; document.getElementById('number').innerHTML = 13;}
 		else if (idRange==12){ document.getElementById('rezultatRange').innerHTML = 7200; document.getElementById('number').innerHTML = 12;}
-		else if (idRange==11){ document.getElementById('rezultatRange').innerHTML = 6600; document.getElementById('number').innerHTML = 11;}
-		else if (idRange==10){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 10;}
-		else if (idRange==9){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 9;}
-		else if (idRange==8){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 8;}
-		else if (idRange==7){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 7;}
-		else if (idRange==6){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 6;}
-		else if (idRange==5){ document.getElementById('rezultatRange').innerHTML = 5500; document.getElementById('number').innerHTML = 5;}
+		else if (idRange==11){ document.getElementById('rezultatRange').innerHTML = 6800; document.getElementById('number').innerHTML = 11;}
+		else if (idRange==10){ document.getElementById('rezultatRange').innerHTML = 6500; document.getElementById('number').innerHTML = 10;}
+		else if (idRange==9){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 9;}
+		else if (idRange==8){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 8;}
+		else if (idRange==7){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 7;}
+		else if (idRange==6){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 6;}
+		else if (idRange==5){ document.getElementById('rezultatRange').innerHTML = 6000; document.getElementById('number').innerHTML = 5;}
 }

@@ -79,11 +79,11 @@
     padding-bottom: 2rem;
   }
   .catalog-sidebar {
-    gap: 1rem;
+    gap: 0.9rem;
     margin-top: 0;
   }
   .catalog-sidebar_box {
-    width: 48.9%;
+    width: 46.9%;
   }
   .catalog-sidebar_box__desc {
     font-size: 1.5rem;
@@ -100,8 +100,5 @@
   }
   .catalog-row_heading {
     font-size: 1.4rem;
-  }
-  .catalog-sidebar_box {
-    width: 48.6%;
   }
 }/*# sourceMappingURL=catalog.css.map */
