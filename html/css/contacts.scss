@@ -69,6 +69,7 @@
     }
   }
   &-information{
+    height: 20rem;
     padding-top: 2rem;
     &_caption{
       font-weight: 400;
@@ -93,5 +94,63 @@ i{
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+  }
+}
+@media (max-width: 990px){
+  .container{
+    width: 74rem;
+  }
+  .main{
+    &-contacts{
+      &_header{
+        &__desc{
+          width: 78%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px){
+  .container{
+    width: 48rem;
+  }
+  .main{
+    &-contacts{
+      &_header{
+        &__heading{
+          font-size: 1.8rem;
+        }
+        &__desc{
+          width: 100%;
+        }
+      }
+    }
+    &-description{
+      &_title{
+        font-size: 1.6rem
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 100%;
+  }
+  .main{
+    &-contacts{
+      &_header{
+        &__heading{
+          text-align: center;
+        }
+      }
+    }
+    &-description{
+      &_title{
+        font-size: 1.5rem
+      }
+    }
+    &-information{
+      text-align: center;
+    }
   }
 }

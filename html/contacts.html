@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="/scss/header.css">
   <link rel="stylesheet" href="/html/css/contacts.css">
   <link rel="stylesheet" href="/html/css/footer.css">
+  <link rel="stylesheet" href="/remodal/remodal.css">
+  <link rel="stylesheet" href="/remodal/remodal-default-theme.css">
+  <link rel="stylesheet" href="/scss/form.css">
+  
 </head>
 <body>
   <header class="header">
@@ -26,12 +30,13 @@
           </div>
             <a data-remodal-target="open-modal" class="header-menu_br-btn open-modal">
             <span>Заказать звонок</span>
-          </a>
-        </div>
-        <div class="header-menu_btn">
-          <span></span>
-          <span></span>
-          <span></span>
+            </a>
+          </div>
+          <div class="header-menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -64,7 +69,7 @@
       <div class="main-contacts_nav">
         <ul class="main-contacts_nav__list">
           <li>
-            <a href="#"><span class="main-contacts_nav__control">Главная</span></a>
+            <a href="/index.html"><span class="main-contacts_nav__control">Главная</span></a>
             <a href="#"><span class="main-contacts_nav__item">|</span></a>
             <a href="#"><span class="main-contacts_nav__col">Контакты</span></a>
           </li>
@@ -111,7 +116,7 @@
     </div>
   </div>
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="footer-box">
       <div class="footer-box_heading">
@@ -119,20 +124,36 @@
         <p class="footer-box_heading__text">Лучший выбор</p>
       </div>
       <div class="footer-box_email">
-        <img src="/html/img/footer/icon_mail.svg" alt="mail">
+        <img src="/html/img/footer/icon_mail.svg" width="50px" height="50px" alt="mail">
         <span>mail</span>
       </div>
       <div class="footer-box_call">
-        <img src="/html/img/footer/icon _phone.svg" alt="">
+        <img src="/html/img/footer/icon _phone.svg" width="50px" height="50px" alt="">
         <span>Вызов</span>
         <p><a  href="tel:89297018660"><i>+7 929-701-8660</i></a></p>
       </div>
       <div class="footer-box_find">
-        <img src="/html/img/footer/icon_map.svg" alt="map">
-        <span></span>
-        <span></span>
+        <img src="/html/img/footer/icon_map.svg" width="50px" height="50px" alt="map">
+        <span>Карта</span>
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
+<form id="form" class="form"> 
+  <div class="block-popup">
+    <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
+    <div class="form-fills">
+      <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
+      <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
+      <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
+        Отправить
+      </button>
+    </div>
+    <span>&times;</span>
+  </div>
+  <div class="overlay"></div>
+</form>
 </body>
+
+<script src="/js/hamburger.js"></script>
+<script src="/js/form.js"></script>

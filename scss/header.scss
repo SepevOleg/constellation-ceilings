@@ -81,6 +81,7 @@
       font-weight: 600;
       font-size: 1.6rem;
       line-height: 111.2%;
+
       color: rgb(12, 11, 11);
       border-radius: 0.9rem;
       width: 21rem;
@@ -89,6 +90,7 @@
       border: 3px solid #8c188d;
       &:hover {
         background-color: #f9009e;
+        cursor: pointer;
       }
       &:active {
         background-color: #d52a94;

@@ -90,6 +90,7 @@
 }
 .header-menu_br-btn:hover {
   background-color: #f9009e;
+  cursor: pointer;
 }
 .header-menu_br-btn:active {
   background-color: #d52a94;
