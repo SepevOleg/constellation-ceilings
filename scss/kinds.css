@@ -46,6 +46,16 @@
   line-height: 2.4rem;
   text-align: center;
 }
+.kinds-box_inner__box {
+  font-size: 2.2rem;
+  font-weight: bold;
+  transition: transform 2s ease-in-out;
+  color: red;
+  cursor: pointer;
+}
+.kinds-box_inner__box:hover {
+  transform: rotateZ(360deg);
+}
 
 .owl-carousel {
   padding-top: 7rem;
@@ -81,7 +91,7 @@
     margin: 2rem 0rem 4rem 5rem;
   }
   .kinds-box_inner {
-    height: 65rem;
+    height: 68rem;
     margin-left: 1rem;
     border-radius: 8%;
   }

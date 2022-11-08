@@ -43,6 +43,16 @@
         line-height: 2.4rem;
         text-align: center;
       }
+      &__box{
+        font-size:2.2rem;
+        font-weight: bold;
+        transition: transform 2s ease-in-out;
+        color: red;
+        cursor: pointer;
+        &:hover {
+          transform: rotateZ(360deg);
+        }
+      }
     }
   }
 }
@@ -87,7 +97,7 @@
     }
     &-box{
       &_inner{
-        height: 65rem;
+        height: 68rem;
         margin-left: 1rem;
         border-radius: 8%;
       }
