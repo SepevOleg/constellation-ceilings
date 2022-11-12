@@ -3,7 +3,7 @@
   background-color: #fafafa;
   padding-top: 14rem;
   &-wrapper{
-    background-image: url(../img/main/fon.svg);
+    background-image: url(../img/main/logo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,6 +162,7 @@
       }
       &_bottom{
         margin: 5rem 0rem 1rem 5.5rem;
+        width: 65%;
       }
     }
   }

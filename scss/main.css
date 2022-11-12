@@ -4,7 +4,7 @@
   padding-top: 14rem;
 }
 .main-wrapper {
-  background-image: url(../img/main/fon.svg);
+  background-image: url(../img/main/logo.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,5 +142,6 @@
   }
   .main-wrapper_bottom {
     margin: 5rem 0rem 1rem 5.5rem;
+    width: 65%;
   }
 }/*# sourceMappingURL=main.css.map */

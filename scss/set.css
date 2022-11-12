@@ -1,6 +1,6 @@
 .set {
   width: 100%;
-  height: 111vh;
+  height: 132vh;
   padding-top: 10rem;
   background-color: #fafafa;
 }
@@ -116,7 +116,7 @@
   }
   .set {
     padding-top: 5rem;
-    height: 102vh;
+    height: 131vh;
   }
   .owl-carousel {
     padding-top: 0rem;
@@ -133,7 +133,7 @@
     font-size: 2.8rem;
   }
   .set-wrapper_top {
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
   .set-wrapper_bot {
     margin-top: 1rem;
@@ -148,5 +148,8 @@
 @media screen and (max-width: 720px) {
   .container {
     width: 48rem;
+  }
+  .set {
+    height: 107vh;
   }
 }/*# sourceMappingURL=set.css.map */

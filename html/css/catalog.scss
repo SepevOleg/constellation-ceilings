@@ -73,8 +73,8 @@
   .container{
     width: 48rem;
   }
-  .catalog{
-    height: 301rem;
+  .catalog{   
+    height: 260rem;
     padding-top: 5rem;
     &-row{
       &_heading{
@@ -84,10 +84,10 @@
       }
     }
     &-sidebar{
-      gap: 1rem;
+      gap: 0.9rem;
       margin-top: 0;
       &_box{
-        width: 48.9%;
+        width: 46.9%;
         &__desc{
           font-size: 1.5rem;
         }
@@ -106,11 +106,6 @@
     &-row{
       &_heading{
         font-size: 1.4rem;
-      }
-    }
-    &-sidebar{
-      &_box{
-        width: 48.6%;
       }
     }
   }
