@@ -4,28 +4,26 @@
   bottom: 40px;
   z-index: 299;
   &-fixed{
-    &_viber{
+    &_vk{
       border-radius: 3rem 0 0 3rem;
       display: flex;
       width: 7rem;
       transform: translateX(30px);
-      padding: .5rem 1rem;
       margin-bottom: 1rem;
       transition: .59s;
-      background: #7D3DAF;
+      background: #e7e9f7;
       &:hover{
         transform: translateX(0px);
       }
     }
-    &_telega{
+    &_instagram{
       border-radius: 3rem 0 0 3rem;
       display: flex;
       width: 7rem;
       transform: translateX(30px);
-      padding: .5rem 1rem;
       margin-bottom: 1rem;
       transition: .59s;
-      background: #2da4e1;
+      background: #e7e9f7;
       &:hover{
         transform: translateX(0px);
       }

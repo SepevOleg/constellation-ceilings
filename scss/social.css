@@ -4,29 +4,27 @@
   bottom: 40px;
   z-index: 299;
 }
-.social-fixed_viber {
+.social-fixed_vk {
   border-radius: 3rem 0 0 3rem;
   display: flex;
   width: 7rem;
   transform: translateX(30px);
-  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   transition: 0.59s;
-  background: #7D3DAF;
+  background: #e7e9f7;
 }
-.social-fixed_viber:hover {
+.social-fixed_vk:hover {
   transform: translateX(0px);
 }
-.social-fixed_telega {
+.social-fixed_instagram {
   border-radius: 3rem 0 0 3rem;
   display: flex;
   width: 7rem;
   transform: translateX(30px);
-  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   transition: 0.59s;
-  background: #2da4e1;
+  background: #e7e9f7;
 }
-.social-fixed_telega:hover {
+.social-fixed_instagram:hover {
   transform: translateX(0px);
 }/*# sourceMappingURL=social.css.map */

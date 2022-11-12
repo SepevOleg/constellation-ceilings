@@ -10,12 +10,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/scss/header.css">
   <link rel="stylesheet" href="/html/css/contacts.css">
-  <link rel="stylesheet" href="/html/css/footer.css">
-  <link rel="stylesheet" href="/remodal/remodal.css">
-  <link rel="stylesheet" href="/remodal/remodal-default-theme.css">
   <link rel="stylesheet" href="/scss/form.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -97,16 +92,34 @@
         <div class="main-matte_heading">
           <h2>Матовые натяжные потолки</h2>
         </div>
-        <div class="your-class">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-        </div>
+        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div><h3>1</h3></div>
+          <div><h3>2</h3></div>
+          <div><h3>3</h3></div>
+          <div><h3>4</h3></div>
+          <div><h3>5</h3></div>
+          <div><h3>6</h3></div>
+        </div>         
       </div>
     </div>
   </main>
+  <form id="form" class="form"> 
+    <div class="block-popup">
+      <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
+      <div class="form-fills">
+        <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
+        <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
+        <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
+          Отправить
+        </button>
+        <div class="checkbox">
+          <input type="checkbox" id="click">
+          <label for="click" class="text">Я согласен с условиями <a href="https://kudago.com/pages/tos/"><u>пользовательского соглашения</u></a></label>
+        </div>
+      </div>
+      <span>&times;</span>
+    </div>
+    <div class="overlay">
+    </div>
+  </form>
 </bodu>
-<script src="/html/kinds Card html/js/mate.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
