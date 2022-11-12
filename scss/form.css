@@ -81,8 +81,14 @@
 
 .checkbox {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-top: 3rem;
+}
+
+.checkbox input {
+  width: auto;
+  margin-bottom: 0;
 }
 
 #click {

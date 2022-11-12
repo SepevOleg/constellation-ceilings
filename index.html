@@ -167,7 +167,7 @@
       </div>
     </div>
     <a data-remodal-target="open-modal" class="main-calc_bottom ">
-        <button class="main-calc_bottom__btn open-modal">Оставить заявку</button>
+        <button class="main-calc_bottom__btn open-modal " >Оставить заявку</button>
       </a>
     </div>
   </div>
@@ -248,8 +248,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="open-modal set-wrapper_bot__but" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>6 000 ₽</p>
             </div>
@@ -325,8 +325,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="open-modal set-wrapper_bot__but" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>7 200 ₽</p>
             </div>
@@ -337,7 +337,7 @@
             <img class="set-wrapper_img__images" src="/img/kinds/icon1.jpg" alt="icon">
           </div>
           <div class="set-wrapper_top">
-            <div class="set-wrapper_top__name">
+            <div class="template-name" class="set-wrapper_top__name">
               <p>Сатиновый натяжной потолок</p>
             </div>
             <div class="set-wrapper_top__text">
@@ -402,8 +402,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="open-modal set-wrapper_bot__but send-email-btn" data-template="" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>6 000₽</p>
             </div>
@@ -414,7 +414,7 @@
             <img class="set-wrapper_img__images" src="/img/kinds/icon1.jpg" alt="icon">
           </div>
           <div class="set-wrapper_top">
-            <div class="set-wrapper_top__name">
+            <div class="template-name" class="set-wrapper_top__name">
               <p>Парящий натяжной потолок</p>
             </div>
             <div class="set-wrapper_top__text">
@@ -479,8 +479,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="open-modal set-wrapper_bot__but send-email-btn" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>10 200₽</p>
             </div>
@@ -491,7 +491,7 @@
             <img class="set-wrapper_img__images" src="/img/kinds/tene.jpg" alt="icon">
           </div>
           <div class="set-wrapper_top">
-            <div class="set-wrapper_top__name">
+            <div class="template-name" class="set-wrapper_top__name">
               <p>Теневой натяжной потолок</p>
             </div>
             <div class="set-wrapper_top__text">
@@ -545,8 +545,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="set-wrapper_bot__but send-email-btn" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>11 000₽</p>
             </div>
@@ -557,7 +557,7 @@
             <img class="set-wrapper_img__images" src="/img/kinds/duplex.jpg" alt="icon">
           </div>
           <div class="set-wrapper_top">
-            <div class="set-wrapper_top__name">
+            <div class="template-name" class="set-wrapper_top__name">
               <p>Двухуровневый натяжной потолок</p>
             </div>
             <div class="set-wrapper_top__text">
@@ -589,8 +589,8 @@
             </div>
           </div>
           <div class="set-wrapper_bot">
-            <a href="#read_made" class="set-wrapper_bot__but" tabindex="0">
-              Оставить заявку</a>
+            <button href="#read_made" class="set-wrapper_bot__but send-email-btn" data-template="" tabindex="0">
+              Оставить заявку</button>
             <div class="set-wrapper_bot__price">
               <p>27 000₽</p>
             </div>
@@ -965,13 +965,16 @@
   <div class="block-popup">
     <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
     <div class="form-fills">
+      <input name="cost" style="display: none" type="text" id="costValue">
+      <input name="square" style="display: none" type="text" id="squareQtyValue">
+      <input name="templateName" style="display: none" type="text" id="templateName">
       <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
       <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
       <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
         Отправить
       </button>
       <div class="checkbox">
-        <input type="checkbox" id="click">
+        <input id="confAccept" value="false" type="checkbox" id="click">
         <label for="click" class="text">Я согласен с условиями <a href="https://kudago.com/pages/tos/"><u>пользовательского соглашения</u></a></label>
       </div>
     </div>
