@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 .kinds-box_inner {
-  height: 52rem;
+  height: 65rem;
   padding-top: 2rem;
   background: #fff;
   border: 1px solid #dbdbdb;
@@ -101,6 +101,7 @@
     width: 96rem;
   }
   .kinds-holdex_subtitle {
+    width: 100%;
     margin-bottom: 4rem;
     margin: 0;
   }
@@ -132,7 +133,7 @@
   }
   .kinds-box_inner {
     width: 85%;
-    height: 55rem;
+    height: 69rem;
     margin-left: 3rem;
     border-radius: 15% 15% 0% 0%;
   }

@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="/scss/social.css">
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -29,14 +28,16 @@
   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(91085294, "init", {
+  ym(91260534, "init", {
        clickmap:true,
        trackLinks:true,
-       accurateTrackBounce:true
+       accurateTrackBounce:true,
+       ecommerce:"dataLayer"
   });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/91085294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/91260534" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+</head>
 <body>
   <header class="header">
     <div class="container">
@@ -60,305 +61,309 @@
         </div>
       </div>
     </div>
-  <hr>
-  <nav class="header-topmenu header-hamburger">
-    <div class="container">
-      <ul class="header-topmenu_list">
-        <li><a class="header-topmenu_list__items" href="/index.html">Главная</a></li>
-        <li><a class="header-topmenu_list__items" href="/index.html#benefits_top">О нас</a></li>
-        <li><a class="header-topmenu_list__items" href="/html/calc.html">Цены</a></li>
-        <li><a class="header-topmenu_list__items" href="/index.html#kinds">Виды потолков</a></li>
-        <li><a class="header-topmenu_list__items" href="#">Отзывы</a></li>
-        <li><a class="header-topmenu_list__items" href="/html/contacts.html">Контакты</a></li>
-      </ul>
-      <div class="header-menu_right2">
-        <div class="header-menu_right__tel">
-          <img src="/img/header/pfone.svg" class="header-menu_right__img" alt="pfone">
-          <a  href="tel:89297018660"  class="header-menu_right__phone" >+7 929-701-8660</a>
+    <hr>
+    <nav class="header-topmenu header-hamburger">
+      <div class="container">
+        <ul class="header-topmenu_list">
+          <li><a class="header-topmenu_list__items" href="/index.html">Главная</a></li>
+          <li><a data-goto class="header-topmenu_list__items" href="/index.html#benefits_top">О нас</a></li>
+          <li><a class="header-topmenu_list__items" href="/html/calc.html">Цены</a></li>
+          <li><a class="header-topmenu_list__items" href="/index.html#kinds">Виды потолков</a></li>
+          <li><a class="header-topmenu_list__items" href="#">Отзывы</a></li>
+          <li><a class="header-topmenu_list__items" href="/html/contacts.html">Контакты</a></li>
+        </ul>
+        <div class="header-menu_right2">
+          <div class="header-menu_right__tel">
+            <img src="/img/header/pfone.svg" class="header-menu_right__img" alt="pfone">
+            <a  href="tel:89297018660"  class="header-menu_right__phone" >+7 929-701-8660</a>
+          </div>
+            <a data-remodal-target="open-modal" class="header-menu_br-btn open-modal">
+            <span>Заказать звонок</span>
+          </a>
         </div>
-          <a data-remodal-target="open-modal" class="header-menu_br-btn open-modal">
-          <span>Заказать звонок</span>
+      </div>
+    </nav> 
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main-calc">
+        <div class="main-calc_nav">
+          <ul class="main-calc_nav__list">
+            <li>
+              <a href="/index.html"><span class="main-calc_nav__control">Главная</span></a>
+              <a href="/html/calc.html"><span class="main-calc_nav__item">|</span></a>
+              <a href="/html/calc.html"><span class="main-calc_nav__col">Натяжные Потолки, цена</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-calc_heading">
+          <h1>Натяжные потолки цены</h1>
+        </div>
+        <div class="main-calc_box">
+          <div class="main-calc_left">
+            <p>Площадь вашего потолка:</p>
+          <div class="main-calc_left__number" id="number">25</div>
+            <p><strong>м<sup>2</sup></strong></p>
+          </div>
+          <div id=""></div>
+          <input type="range" name="slider-2" id="slider-2" value="20" min="5" max="50" step="1">   
+          <div class="main-calc_mid">
+            <div class="main-calc_mid__wrap">
+              <div class="main-calc_mid__before">5</div>
+              <div id="slider" class="main-calc_mid__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                <div id="custom" class="main-calc_mid__custom ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 44.4444%;"></div>
+              </div>
+              <div class="main-calc_mid__after">50</div>
+            </div>
+          </div>
+          <div class="main-calc_right">
+          <div class="main-calc_right__sum"><strong id="rezultatRange">11380</strong></div>
+          </div>
+        </div>
+      </div>
+      <a data-remodal-target="open-modal" class="main-calc_bottom ">
+          <button class="main-calc_bottom__btn open-modal">Оставить заявку</button>
         </a>
       </div>
     </div>
-  </nav> 
-  </header>
-<main class="main">
-  <div class="container">
-    <div class="main-calc">
-      <div class="main-calc_nav">
-        <ul class="main-calc_nav__list">
-          <li>
-            <a href="/index.html"><span class="main-calc_nav__control">Главная</span></a>
-            <a href="/html/calc.html"><span class="main-calc_nav__item">|</span></a>
-            <a href="/html/calc.html"><span class="main-calc_nav__col">Натяжные Потолки, цена</span></a>
-          </li>
-        </ul>
-			</div>
-      <div class="main-calc_heading">
-        <h1>Натяжные потолки цены</h1>
-      </div>
-      <div class="main-calc_box">
-        <div class="main-calc_left">
-          <p>Площадь вашего потолка:</p>
-        <div class="main-calc_left__number" id="number">25</div>
-          <p><strong>м<sup>2</sup></strong></p>
+  </main>
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog-row">
+        <div class="catalog-row_heading">
+          <h2>Натяжной потолок цена за 1 м/кв (Полотно + 4 угла)</h2>
         </div>
-        <div id=""></div>
-        <input type="range" name="slider-2" id="slider-2" value="20" min="5" max="50" step="1">   
-        <div class="main-calc_mid">
-          <div class="main-calc_mid__wrap">
-            <div class="main-calc_mid__before">5</div>
-            <div id="slider" class="main-calc_mid__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-              <div id="custom" class="main-calc_mid__custom ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 44.4444%;"></div>
+        <div class="catalog-sidebar">
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/matte.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки в мат, глянец, сатин</p>
+              <p class="catalog-sidebar_box__col">От 550 руб/м2</p>
             </div>
-            <div class="main-calc_mid__after">50</div>
           </div>
-        </div>
-        <div class="main-calc_right">
-        <div class="main-calc_right__sum"><strong id="rezultatRange">11380</strong></div>
-        </div>
-      </div>
-    </div>
-    <a data-remodal-target="open-modal" class="main-calc_bottom ">
-        <button class="main-calc_bottom__btn open-modal">Оставить заявку</button>
-      </a>
-    </div>
-  </div>
-</main>
-<section class="catalog">
-  <div class="container">
-    <div class="catalog-row">
-      <div class="catalog-row_heading">
-        <h2>Натяжной потолок цена за 1 м/кв (Полотно + 4 угла)</h2>
-      </div>
-      <div class="catalog-sidebar">
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки в мат, глянец, сатин</p>
-            <p class="catalog-sidebar_box__col">От 550 руб/м2</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/shady.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Теневые натяжные потолки</p>
+              <p class="catalog-sidebar_box__col">От 600 руб/периметр</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Теневые натяжные потолки</p>
-            <p class="catalog-sidebar_box__col">От 600 руб/периметр</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/gapless.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Бесщелевые натяжные потолки</p>
+              <p class="catalog-sidebar_box__col">От 1200 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Бесщелевые натяжные потолки</p>
-            <p class="catalog-sidebar_box__col">От 1200 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/img/kinds/soaring/soaring.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки "Парящие Линии"</p>
+              <p class="catalog-sidebar_box__col">От 3500 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки "Парящие Линии"</p>
-            <p class="catalog-sidebar_box__col">От 3500 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/tissue.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Тканевые натяжные потолки (DESCOR и CLIPSO)</p>
+              <p class="catalog-sidebar_box__col">От 3500 руб/м2</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Тканевые натяжные потолки (DESCOR и CLIPSO)</p>
-            <p class="catalog-sidebar_box__col">От 3500 руб/м2</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/backlit.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки с подсветкой</p>
+              <p class="catalog-sidebar_box__col">От 1100 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки с подсветкой</p>
-            <p class="catalog-sidebar_box__col">От 1100 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/curtain.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки с нишей для штор</p>
+              <p class="catalog-sidebar_box__col">От 2700 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки с нишей для штор</p>
-            <p class="catalog-sidebar_box__col">От 2700 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/soaring.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Парящий натяжной потолок</p>
+              <p class="catalog-sidebar_box__col">От 750 руб/м2</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Парящий натяжной потолок</p>
-            <p class="catalog-sidebar_box__col">От 750 руб/м2</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/photo-printing.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки с фотопечатью</p>
+              <p class="catalog-sidebar_box__col">От 1200 руб/м2</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки с фотопечатью</p>
-            <p class="catalog-sidebar_box__col">От 1200 руб/м2</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/light.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Световые натяжные потолки</p>
+              <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Световые натяжные потолки</p>
-            <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/multilevel.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Многоуровневые натяжные потолки</p>
+              <p class="catalog-sidebar_box__col">От 2500 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Многоуровневые натяжные потолки</p>
-            <p class="catalog-sidebar_box__col">От 2500 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/track-ceilings.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки с треком</p>
+              <p class="catalog-sidebar_box__col">От 700 руб/м.п</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки с треком</p>
-            <p class="catalog-sidebar_box__col">От 700 руб/м.п</p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/piking-backlight.jpg" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки "Звездное Небо"</p>
+              <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки "Звездное Небо"</p>
-            <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/apple.png" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки Apply</p>
+              <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки Apply</p>
-            <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/sky.png" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки "Небо, Облако"</p>
+              <p class="catalog-sidebar_box__col">От 900 руб/м2</p>
+            </div>
           </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки "Небо, Облако"</p>
-            <p class="catalog-sidebar_box__col">От 900 руб/м2</p>
-          </div>
-        </div>
-        <div class="catalog-sidebar_box">
-          <img class="catalog-sidebar_box__fon" src="/img/main/logo.jpg" width="292px" height="200px" alt="fon">
-          <div class="catalog-sidebar_box__desc">
-            <p>Натяжные потолки Double Vision</p>
-            <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+          <div class="catalog-sidebar_box">
+            <img class="catalog-sidebar_box__fon" src="/html/img/calc/starry-sky.png" width="292px" height="200px" alt="fon">
+            <div class="catalog-sidebar_box__desc">
+              <p>Натяжные потолки Double Vision</p>
+              <p class="catalog-sidebar_box__col"><a  href="tel:89297018660">Подробнее по звонку</a></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="prices">
-  <div class="container">
-    <div class="prices-row">
-      <div class="prices-row_span">
-        <p class="prices-row_span__desc">В прайс-листе указана приблизительная стоимость услуг!!!!</p>
-        <span class="prices-row_span__item">Узнать точную цену можно позвонив нам по телефону:</span>
-        <div class="header-menu_right__tel prices-centr">
-          <a  href="tel:89297018660"  class="header-menu_right__phone" >+7 929-701-8660 <mark>без выходных!</mark></a>
+  </section>
+  <section class="prices">
+    <div class="container">
+      <div class="prices-row">
+        <div class="prices-row_span">
+          <p class="prices-row_span__desc">В прайс-листе указана приблизительная стоимость услуг!!!!</p>
+          <span class="prices-row_span__item">Узнать точную цену можно позвонив нам по телефону:</span>
+          <div class="header-menu_right__tel prices-centr">
+            <a  href="tel:89297018660"  class="header-menu_right__phone" >+7 929-701-8660 <mark>без выходных!</mark></a>
+          </div>
         </div>
-      </div>
-      <h3>Натяжные Потолки Цены в Cамаре на доп. работы</h3>
-      <div class="prices-row_table">
-        <table style="width: 100%;" border="1" cellspacing="1" cellpadding="1">
+        <h3>Натяжные Потолки Цены в Cамаре на доп. работы</h3>
+        <div class="prices-row_table">
+          <table style="width: 100%;" border="1" cellspacing="1" cellpadding="1">
+            <tbody class="prices-row_table__wrapper">
+            <tr>
+            <td class="prices-row_table__title" style="text-align: center;" colspan="1" rowspan="1"><strong>Наименование</strong></td>
+            <td class="prices-row_table__title" style="text-align: center;" colspan="1" rowspan="1"><strong>Цена, руб.</strong></td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Декоративная вставка</td>
+            <td class="prices-row_table__subtitle">70 руб./м.п.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Дополнительные углы</td>
+            <td class="prices-row_table__subtitle">50 руб./шт.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Окантовка труб (обвод)</td>
+            <td class="prices-row_table__subtitle">от 250 руб./шт.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Криволинейный участок</td>
+            <td class="prices-row_table__subtitle">300 руб./м.п.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Точка света (с подключением) </td>
+            <td class="prices-row_table__subtitle">от 400 руб/шт.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Работа на высоте</td>
+            <td class="prices-row_table__subtitle">от 700 руб</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Монтаж бруса</td>
+            <td class="prices-row_table__subtitle">500 руб/1м. п.</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✔️ Монтаж по керамограниту</td>
+            <td class="prices-row_table__subtitle">от 300 руб/1м. п.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="prices-row_caption">
+          <p>⚹ Цены на натяжные потолки актуальны по состоянию на <strong>10.09.2022г.</strong></p>
+          <h4>Цены на натяжные потолки с монтажом ✅ (установкой) в Cамаре.</h4>
+        <table style="width: 100%;"border="1" cellspacing="1" cellpadding="1">
           <tbody class="prices-row_table__wrapper">
-          <tr>
-          <td class="prices-row_table__title" style="text-align: center;" colspan="1" rowspan="1"><strong>Наименование</strong></td>
-          <td class="prices-row_table__title" style="text-align: center;" colspan="1" rowspan="1"><strong>Цена, руб.</strong></td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Декоративная вставка</td>
-          <td class="prices-row_table__subtitle">70 руб./м.п.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Дополнительные углы</td>
-          <td class="prices-row_table__subtitle">50 руб./шт.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Окантовка труб (обвод)</td>
-          <td class="prices-row_table__subtitle">от 250 руб./шт.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Криволинейный участок</td>
-          <td class="prices-row_table__subtitle">300 руб./м.п.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Точка света (с подключением) </td>
-          <td class="prices-row_table__subtitle">от 400 руб/шт.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Работа на высоте</td>
-          <td class="prices-row_table__subtitle">от 700 руб</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Монтаж бруса</td>
-          <td class="prices-row_table__subtitle">500 руб/1м. п.</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✔️ Монтаж по керамограниту</td>
-          <td class="prices-row_table__subtitle">от 300 руб/1м. п.</td>
-          </tr>
+            <tr>
+            <td class="prices-row_table__title">✅ Потолок в коридор:</td>
+            <td class="prices-row_table__subtitle">от 5000 руб</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✅ Потолок на кухню:</td>
+            <td class="prices-row_table__subtitle">от 5000 руб</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✅ Потолок в спальню:</td>
+            <td class="prices-row_table__subtitle">от 5000 руб</td>
+            </tr>
+            <tr>
+            <td class="prices-row_table__title">✅ Потолок в гостиную:</td>
+            <td class="prices-row_table__subtitle">от 5000 руб</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <div class="prices-row_caption">
-        <p>⚹ Цены на натяжные потолки актуальны по состоянию на <strong>10.09.2022г.</strong></p>
-        <h4>Цены на натяжные потолки с монтажом ✅ (установкой) в Cамаре.</h4>
-      <table style="width: 100%;"border="1" cellspacing="1" cellpadding="1">
-        <tbody class="prices-row_table__wrapper">
-          <tr>
-          <td class="prices-row_table__title">✅ Потолок в коридор:</td>
-          <td class="prices-row_table__subtitle">от 5000 руб</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✅ Потолок на кухню:</td>
-          <td class="prices-row_table__subtitle">от 5000 руб</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✅ Потолок в спальню:</td>
-          <td class="prices-row_table__subtitle">от 5000 руб</td>
-          </tr>
-          <tr>
-          <td class="prices-row_table__title">✅ Потолок в гостиную:</td>
-          <td class="prices-row_table__subtitle">от 5000 руб</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-  </div>
-</section>
-<section class="social">
-  <div class="social-fixed">
-    <a href="https://vk.com/sozvezdie163" class="social-fixed_vk">
-      <img src="/img/social/vkontakte.svg" width="40px" height="40px" alt="viber">
-    </a>
-    <a href="https://www.instagram.com/constellation_samara/" class="social-fixed_instagram">
-      <img src="/img/social/instagram.svg" width="40px" height="40px" alt="telegram">
-    </a>
-  </div>
-</section>
-<form id="form" class="form"> 
-  <div class="block-popup">
-    <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
-    <div class="form-fills">
-      <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
-      <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
-      <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
-        Отправить
-      </button>
-      <div class="checkbox">
-        <input type="checkbox" id="click">
-        <label for="click" class="text">Я согласен с условиями <a href="https://kudago.com/pages/tos/"><u>пользовательского соглашения</u></a></label>
+  </section>
+  <section class="social">
+    <div class="social-fixed">
+      <a href="https://vk.com/sozvezdie163" class="social-fixed_vk">
+        <img src="/img/social/vkontakte.svg" width="40px" height="40px" alt="viber">
+      </a>
+      <a href="https://www.instagram.com/constellation_samara/" class="social-fixed_instagram">
+        <img src="/img/social/instagram.svg" width="40px" height="40px" alt="telegram">
+      </a>
+    </div>
+  </section>
+  <form id="form" class="form"> 
+    <div class="block-popup">
+      <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
+      <div class="form-fills">
+        <input name="cost" style="display: none" type="text" id="costValue">
+        <input name="square" style="display: none" type="text" id="squareQtyValue">
+        <input name="templateName" style="display: none" type="text" id="templateName">
+        <input type="text" id="userName" name="user_name" placeholder="Введите Ваше имя">
+        <input type="text" id="userPhone" name="contact_number" placeholder="Введите Ваш номер">
+        <button id="sendEmail" class="block-popup_sub" type="submit" name="submit" value="Отправить заявку">
+          Отправить
+        </button>
+        <div class="checkbox">
+          <input id="confAccept" value="false" type="checkbox" id="click">
+          <label for="click" class="text">Я согласен с условиями <a href="https://kudago.com/pages/tos/"><u>пользовательского соглашения</u></a></label>
+        </div>
       </div>
+      <span>&times;</span>
     </div>
-    <span>&times;</span>
-  </div>
-  <div class="overlay"></div>
-</form>
+    <div class="overlay">
+    </div>
+  </form>
 </body>
 <script src="jquery.min.js"></script>
 <script src="/carosel/owl.carousel.min.js"></script>
 <script src="js/calc.js"></script>
 <script src="/js/hamburger.js"></script>
-<script src="/js/form.js"></script>
+<script src="/js/email.js"></script>

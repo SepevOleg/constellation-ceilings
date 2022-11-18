@@ -21,7 +21,7 @@
     gap: 1.9rem;
     cursor: pointer;
     &_inner{
-      height: 52rem;
+      height: 65rem;
       padding-top: 2rem;
       background: #fff;
       border: 1px solid #dbdbdb;
@@ -111,6 +111,7 @@
   .kinds{
     &-holdex{
       &_subtitle{
+        width: 100%;
         margin-bottom: 4rem;
         margin: 0;
       }
@@ -148,7 +149,7 @@
     &-box{
       &_inner{
         width: 85%;
-        height: 55rem;
+        height: 69rem;
         margin-left: 3rem;
         border-radius: 15% 15% 0% 0%;
       }

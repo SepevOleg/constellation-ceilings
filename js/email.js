@@ -63,25 +63,5 @@ if (form) {
       
       
     });
-    
-
-  // } else {
-  //   templateNameValue.value = templateName
-  //   console.log(templateNameValue)
-  //   formBtn.addEventListener('click', function(event) {
-  //     event.preventDefault();
-  //     costValue.value = cost.textContent
-  //     squareQtyValue.value = square.textContent
-  //     emailjs.sendForm('service_rl5mcci', 'template_4fth5g8', form)
-  //     .then(function() {
-  //       alert('Ваши данные приняты, ждите ответной связи')
-  //       console.log('SUCCESS!');
-  //       form.reset()
-  //     }, function(error) {
-  //       alert(error)
-  //       console.log('FAILED...', error);
-  //     });
-  //   });
-  // }
-  
-}
+  }
+  {}

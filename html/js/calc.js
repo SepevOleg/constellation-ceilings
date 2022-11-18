@@ -18,7 +18,7 @@
 		const rangeSpan = document.getElementById('rezultatRange')
 		const range = document.getElementById('slider-2')
 		let square = document.getElementById('number')
-		const maxValue = 70
+		const maxValue = 40
 		let count = range.value
 		square.textContent = count
 		range.addEventListener('input', (element) => {
