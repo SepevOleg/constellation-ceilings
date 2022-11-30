@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="/scss/modal.css">
   <link rel="stylesheet" href="/scss/form.css">
   <link rel="stylesheet" href="/html/css/input.css">
+  <link rel="stylesheet" href="/scss/footer.css">
+  <link rel="stylesheet" href="/scss/form-stock.css">
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
@@ -168,6 +170,28 @@
     </div>
   </div>
 </main>
+<form id="stock" class="stock">
+  <div class="container">
+    <div class="stock-block">
+      <div class="stock-fon">
+        <img src="/img/stock/stock.svg" alt="stock">
+        <button class="stock-close_buttom" aria-label="Close"></button>
+      </div>
+      <!-- <div class="stock-box">
+        <div class="stock-box_left">
+          <h6 class="stock-box_left__heading">АКЦИЯ!</h6>
+        </div>
+        <div class="stock-box_right">
+          <span class="stock-box_right__sum">1+1=3</span>
+          <p>Дарим третий потолок в подарок!</p>
+        </div>
+        <div class="stock-box_bottom">
+          <p>Мы сделаем ваш потолок ярче!</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</form>
 <section class="set">
   <div class="container">
     <div class="set-box">
@@ -977,11 +1001,23 @@
   <div class="overlay">
   </div>
 </form>
-<div id="zatemnenie">
-  <div id="okno">Всплывающее окошко!<br>
-    <a href="#" class="close">Закрыть окно</a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-box">
+      <div class="footer-box_left">
+        <img class="footer-box_left__img" src="/img/footer/star.svg" alt="star">
+        <h5 class="footer-box_left__logo">Созвездие Потолков</h5>
+      </div>
+      <div class="footer-box_mid">
+        <p class="footer-box_mid__text">Вот уже более, чем за 13 лет я и моя команда реализовали более 3000 ремонтов монтажей натяжных потолков в квартирах, коттеджах, домах и офисах выполнили более 100 000 кв.м и. Выполняем работы от простого  до эксклюзивных.</p>
+      </div>
+      <div class="footer-box_mid__right">
+        <p>Бесплатная консультация по телефону. Подскажем, как сделать лучше. <a href="tel:89297018660">Звоните +7 937-657-64-74</a></p>
+      </div>
+    </div>
+
   </div>
-</div>
+</footer>
 </body>
 <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 <script
@@ -993,6 +1029,7 @@
 
 <script src="/html/js/calc.js"></script>
 <script src="/js/hamburger.js"></script>
+<script src="/js/form-stock.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="./js/email.js"></script>
 <script type="text/javascript">

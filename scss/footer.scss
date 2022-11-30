@@ -1,0 +1,22 @@
+.footer{
+  background-color: aliceblue;
+  &-box{
+    display: flex;
+    justify-content: space-between;
+    &_left{
+      display: flex;
+      align-items: center;
+      &__logo{
+        font-weight: 600;
+        font-size: 2rem;
+      }
+    }
+    &_mid{
+      &__text{
+        font-weight: 400;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+    }
+  }
+}

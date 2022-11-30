@@ -1,0 +1,41 @@
+.stock::before {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.stock:hover {
+  opacity: 1;
+}
+.stock-close_buttom {
+  vertical-align: middle;
+  border: none;
+  color: inherit;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.6;
+}
+.stock-close_buttom:focus, .stock-close_buttom:hover {
+  opacity: 1;
+  background: rgba(247, 3, 3, 0.5);
+}
+.stock-close_buttom:active {
+  background: rgba(247, 0, 0, 0.9);
+}
+.stock-close_buttom::before, .stock-close_buttom::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3rem;
+  width: 4px;
+  background-color: currentColor;
+}
+.stock-close_buttom::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.stock-close_buttom::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}/*# sourceMappingURL=form-stock.css.map */

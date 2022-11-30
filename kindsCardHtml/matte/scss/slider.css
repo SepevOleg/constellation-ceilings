@@ -1,14 +1,1 @@
-.main-slider {
-  background-color: antiquewhite;
-  width: 750px;
-  height: 300px;
-}
-.main-slider_box {
-  position: relative;
-}
-.main-slider_box__slide {
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  border: 3px solid black;
-}/*# sourceMappingURL=slider.css.map */
+/*# sourceMappingURL=slider.css.map */
