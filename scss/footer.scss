@@ -1,11 +1,14 @@
 .footer{
   background-color: aliceblue;
+  padding-bottom: 2rem;
   &-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 6rem;
     &_left{
       display: flex;
       align-items: center;
+      gap: 1rem;
       &__logo{
         font-weight: 600;
         font-size: 2rem;
@@ -16,6 +19,23 @@
         font-weight: 400;
         font-size: 1.8rem;
         text-align: center;
+      }
+      &__right{
+        text-align: center;
+        p{
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px){
+  .footer{
+    &-box{
+      flex-direction: column;
+      &_left{
+        flex-direction: column;
       }
     }
   }

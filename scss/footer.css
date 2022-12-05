@@ -1,13 +1,16 @@
 .footer {
   background-color: aliceblue;
+  padding-bottom: 2rem;
 }
 .footer-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 6rem;
 }
 .footer-box_left {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .footer-box_left__logo {
   font-weight: 600;
@@ -17,4 +20,20 @@
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
+}
+.footer-box_mid__right {
+  text-align: center;
+}
+.footer-box_mid__right p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1200px) {
+  .footer-box {
+    flex-direction: column;
+  }
+  .footer-box_left {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -1,3 +1,9 @@
+.stock {
+  position: fixed;
+  opacity: 2;
+  top: 15rem;
+  cursor: pointer;
+}
 .stock::before {
   display: inline-block;
   position: relative;
@@ -6,12 +12,27 @@
 .stock:hover {
   opacity: 1;
 }
+.stock-block {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.stock .element-show {
+  opacity: 1;
+  transition: all 3s;
+  transform: translateX(50%);
+}
+.stock-fon_img {
+  width: 100%;
+  opacity: 1;
+}
+.stock-fon_img:hover {
+  opacity: 1;
+}
 .stock-close_buttom {
   vertical-align: middle;
   border: none;
   color: inherit;
   border-radius: 50%;
-  background: transparent;
   position: absolute;
   width: 3.2rem;
   height: 3.2rem;
@@ -38,4 +59,16 @@
 }
 .stock-close_buttom::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.stock-close #close {
+  display: none;
+}
+.stock-close #close:hover {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .stock .element-show {
+    transform: translateY(60%);
+  }
 }/*# sourceMappingURL=form-stock.css.map */

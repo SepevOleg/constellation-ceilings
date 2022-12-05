@@ -18,11 +18,11 @@
 		const rangeSpan = document.getElementById('rezultatRange')
 		const range = document.getElementById('slider-2')
 		let square = document.getElementById('number')
-		const maxValue = 40
+		const maxValue = 50
 		let count = range.value
 		square.textContent = count
 		range.addEventListener('input', (element) => {
-			const price = 1200
+			const price = 820
 			let value = element.target.value
 			console.log(value)
 			value = price * value

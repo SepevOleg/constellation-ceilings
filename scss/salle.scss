@@ -1,0 +1,100 @@
+.salle{
+  width: 100%;
+  margin-top: 4rem;
+  &-fon{
+    background-image: url(/img/salle/pot.png);
+    width: 100%;
+    height: 30rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+  }
+  &-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    &_btn{
+      display: flex;
+      justify-content: center;
+      span{
+        background-color: #a11c93;
+          width: 100%;
+          text-align: center;
+          color: antiquewhite;
+          &:hover {
+            background-color: #f9009e;
+          }
+          &:active {
+            background-color: #d52a94;
+            -webkit-transform: translateY(1px);
+                    transform: translateY(1px);
+          }
+      }
+    }
+    &_heading{
+      font-weight: 600;
+      font-size: 2.4rem;
+      color: #8c188d;
+      text-transform:uppercase;
+      span{
+        color: #f30606;
+        font-weight: 800;
+        border-radius: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 990px){
+  .container{
+    width: 74rem;
+  }
+  .salle{
+    &-box{
+      &_heading{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media (max-width: 720px){
+  .container{
+    width: 48rem;
+  }
+  .salle{
+    &-fon{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &-box{
+      &_heading{
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      &_icon{
+        img{
+          width: 84%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 390px;
+    padding: 0 15px;
+  }
+  .salle{
+    &-box{
+      flex-direction: column;
+      &_heading{
+        font-size: 1.3rem;
+      }
+      &_icon{
+        width: 25%;
+      }
+    }
+  }
+}
