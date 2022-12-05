@@ -1,6 +1,8 @@
 .salle{
   width: 100%;
-  margin-top: 4rem;
+  padding-top: 2rem;
+    background-color: #fafafa;
+}
   &-fon{
     background-image: url(/img/salle/pot.png);
     width: 100%;
@@ -20,17 +22,17 @@
       justify-content: center;
       span{
         background-color: #a11c93;
-          width: 100%;
-          text-align: center;
-          color: antiquewhite;
-          &:hover {
-            background-color: #f9009e;
-          }
-          &:active {
-            background-color: #d52a94;
-            -webkit-transform: translateY(1px);
-                    transform: translateY(1px);
-          }
+        width: 100%;
+        text-align: center;
+        color: antiquewhite;
+        &:hover {
+          background-color: #f9009e;
+        }
+        &:active {
+          background-color: #d52a94;
+          -webkit-transform: translateY(1px);
+                  transform: translateY(1px);
+        }
       }
     }
     &_heading{
