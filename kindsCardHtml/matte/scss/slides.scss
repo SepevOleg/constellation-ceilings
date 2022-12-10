@@ -1,0 +1,28 @@
+.gallery{
+  width: 100%;
+  &-product{
+    margin: 30px;
+    &_icons{
+      float: left;
+      img{
+        height: 120px;
+        display: block;
+        cursor: pointer;
+        border: 2px solid #db06eb;
+        opacity: 0.6;
+        padding: 10px;
+        &:hover {
+        opacity:1;
+        }
+      }
+    }
+  }
+  &-img{
+    &_container{
+      float: left;
+      margin: 50px 0px;
+      width: 220px;
+      border: 1px solid #ccc;
+    }
+  }
+}

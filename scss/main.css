@@ -3,6 +3,9 @@
   background-color: #fafafa;
   padding-top: 14rem;
 }
+.main-box {
+  display: flex;
+}
 .main-wrapper {
   background-image: url(../img/main/logo.jpg);
   background-position: top;
@@ -62,6 +65,9 @@
   background-color: #d52a94;
   transform: translateY(1px);
 }
+.main-right_discount {
+  position: relative;
+}
 
 @media (max-width: 1250px) {
   .container {
@@ -88,7 +94,7 @@
     margin: 1.8rem;
   }
   .main-wrapper_bottom {
-    width: 59%;
+    width: 39%;
     height: 5rem;
   }
   .main-calc_mid {

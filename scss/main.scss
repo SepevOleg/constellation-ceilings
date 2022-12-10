@@ -2,6 +2,9 @@
   width: 100%;
   background-color: #fafafa;
   padding-top: 14rem;
+  &-box{
+    display: flex;
+  }
   &-wrapper{
     background-image: url(../img/main/logo.jpg);
     background-position: top;
@@ -62,6 +65,11 @@
       }
     }
   }
+  &-right{
+    &_discount{
+      position: relative;
+    }
+  }
 }
 @media (max-width: 1250px){
   .container{
@@ -96,7 +104,7 @@
         }
       }
       &_bottom{
-        width: 59%;
+        width: 39%;
         height: 5rem;
       }
     }

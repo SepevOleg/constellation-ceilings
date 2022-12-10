@@ -110,6 +110,10 @@ i:active {
   .main-description_title {
     font-size: 1.6rem;
   }
+  .main-description_text {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 @media (max-width: 480px) {
   .container {

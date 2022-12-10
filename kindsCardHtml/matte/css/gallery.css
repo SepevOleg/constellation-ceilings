@@ -1,29 +1,61 @@
-#slides {
+#slides{
+	position: relative;
+	height: 450px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.gallery{
+	text-align: center;
+	height: 65rem;
+}
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+
+.controls{
+	display: none;
+}
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+  
+  background-size: cover;
+	
+}
+.controls{
+  background: rgb(239, 7, 177);
+  color: #fff;
+  border: none;
+  padding: 20px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 10px 0px 0px 10px;
+  width: 70px;
+}
+.container{
   position: relative;
-  height: 300px;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
 }
-.slide {
+
+.buttons{
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-.showing {
-  opacity: 1;
-  z-index: 2;
-}
-.slide {
-  font-size: 40px;
-  padding: 40px;
-  box-sizing: border-box;
+  z-index: 10;
+	left: 38%;
 }

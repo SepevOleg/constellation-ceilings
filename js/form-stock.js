@@ -10,7 +10,7 @@ function onEntry(entry) {
 let options = {
   threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.stock-block');
+let elements = document.querySelectorAll('.stock-box');
 
 for (let elm of elements) {
   observer.observe(elm);

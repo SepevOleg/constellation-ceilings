@@ -1,6 +1,7 @@
 .salle {
   width: 100%;
-  margin-top: 4rem;
+  padding-top: 2rem;
+  background-color: #fafafa;
 }
 .salle-fon {
   background-image: url(/img/salle/pot.png);
@@ -21,29 +22,49 @@
   display: flex;
   justify-content: center;
 }
-.salle-box_btn span {
-  background-color: #a11c93;
-  width: 100%;
-  text-align: center;
-  color: antiquewhite;
-}
-.salle-box_btn span:hover {
-  background-color: #f9009e;
-}
-.salle-box_btn span:active {
-  background-color: #d52a94;
-  transform: translateY(1px);
-}
 .salle-box_heading {
   font-weight: 600;
   font-size: 2.4rem;
   color: #8c188d;
   text-transform: uppercase;
 }
-.salle-box_heading span {
+.salle-box_heading__red {
   color: #f30606;
   font-weight: 800;
   border-radius: 2rem;
+}
+.salle-box_icon::before {
+  content: "https://www.flaticon.com/free-icons/ribbon";
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-family: FontAwesome;
+  background: #23aae2;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: -30px;
+}
+.salle-box_br--sp {
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #8c188d;
+  color: #ddf;
+  padding: 1.5rem 4rem;
+  border-radius: 1.5rem;
+}
+.salle-box_br--sp:hover {
+  background-color: rgba(170, 25, 170, 0.6392156863);
+}
+.salle-box_br--sp:active {
+  background-color: #6e0f49;
+  transform: translateY(1px);
 }
 
 @media (max-width: 990px) {

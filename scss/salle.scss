@@ -1,8 +1,7 @@
 .salle{
   width: 100%;
   padding-top: 2rem;
-    background-color: #fafafa;
-}
+  background-color: #fafafa;
   &-fon{
     background-image: url(/img/salle/pot.png);
     width: 100%;
@@ -20,30 +19,56 @@
     &_btn{
       display: flex;
       justify-content: center;
-      span{
-        background-color: #a11c93;
-        width: 100%;
-        text-align: center;
-        color: antiquewhite;
-        &:hover {
-          background-color: #f9009e;
-        }
-        &:active {
-          background-color: #d52a94;
-          -webkit-transform: translateY(1px);
-                  transform: translateY(1px);
-        }
-      }
-    }
+    } 
     &_heading{
       font-weight: 600;
       font-size: 2.4rem;
       color: #8c188d;
       text-transform:uppercase;
-      span{
+      &__red{
         color: #f30606;
         font-weight: 800;
         border-radius: 2rem;
+      }
+    }
+    &_icon{
+      &::before{
+        content: "https://www.flaticon.com/free-icons/ribbon";
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        font-family: FontAwesome;
+        background: #23aae2;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        top: -30px;
+      }
+    }
+    &_br{
+      &--sp{
+        font-weight: 800;
+        font-size: 1.2rem;
+        display: inline-block;
+        margin: 1em;
+
+        text-transform: uppercase;
+        cursor: pointer;
+        background: #8c188d;
+        color: #ddf;
+
+        padding: 1.5rem 4rem;
+        border-radius: 1.5rem;
+        &:hover {
+          background-color: #aa19aaa3;
+        }
+        &:active {
+          background-color: #6e0f49;
+          -webkit-transform: translateY(1px);
+                  transform: translateY(1px);
+        }
       }
     }
   }
