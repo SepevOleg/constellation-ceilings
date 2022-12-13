@@ -213,6 +213,9 @@
     width: 390px;
     padding: 0 15px;
   }
+  .header {
+    height: 10%;
+  }
   .header-topmenu {
     left: 0rem;
   }

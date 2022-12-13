@@ -66,6 +66,75 @@
   background-color: #6e0f49;
   transform: translateY(1px);
 }
+.salle-box2 {
+  background-image: url(/img/stock/fon2.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  width: 100%;
+  height: 55rem;
+  opacity: 0.9;
+}
+.salle-box2_header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.5rem;
+}
+.salle-box2_header__heading {
+  font-weight: 900;
+  font-size: 4.4rem;
+  color: #ff0000;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+.salle-box2_header__img {
+  width: 22%;
+}
+.salle-box2_main {
+  opacity: 1;
+}
+.salle-box2_main__slogan {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(219, 255, 0);
+  padding-left: 6rem;
+  width: 62%;
+  text-align: center;
+}
+.salle-box2_main__tagline {
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 4.8rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fbff0b;
+  padding: 2rem 0rem 0rem 5rem;
+}
+.salle-box2_bottom__btn {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: rgb(255, 255, 255);
+  line-height: 3.5rem;
+  text-align: center;
+  background-color: rgb(213, 97, 232);
+  margin: 3rem 0rem 0rem 16rem;
+}
+.salle-box2_bottom__btn:hover {
+  background-color: #ee1010;
+  cursor: pointer;
+}
+.salle-box2_bottom__btn:active {
+  background-color: #606060;
+  transform: translateY(1px);
+}
 
 @media (max-width: 990px) {
   .container {
@@ -91,10 +160,27 @@
   .salle-box_icon img {
     width: 84%;
   }
+  .salle-box2_header__heading {
+    font-size: 2.4rem;
+  }
+  .salle-box2_main__slogan {
+    font-size: 2.6rem;
+    width: 85%;
+    padding-top: 4rem;
+    line-height: 3rem;
+    padding-left: 0;
+  }
+  .salle-box2_main__tagline {
+    text-align: center;
+  }
+  .salle-box2_bottom__btn {
+    width: 65%;
+    margin: 7rem 0rem 0rem 8rem;
+  }
 }
 @media (max-width: 480px) {
   .container {
-    width: 390px;
+    width: 100%;
     padding: 0 15px;
   }
   .salle-box {
@@ -105,5 +191,25 @@
   }
   .salle-box_icon {
     width: 25%;
+  }
+  .salle-box2_header {
+    align-items: center;
+    flex-direction: column;
+  }
+  .salle-box2_header__heading {
+    font-size: 2.6rem;
+  }
+  .salle-box2_main__slogan {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .salle-box2_main__tagline {
+    font-size: 2.8rem;
+    padding: 6rem 0rem 0rem 0rem;
+  }
+  .salle-box2_bottom__btn {
+    width: 80%;
+    margin: 2rem 0rem 0rem 3rem;
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=salle.css.map */

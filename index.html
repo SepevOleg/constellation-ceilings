@@ -160,6 +160,7 @@
 <form id="stock" class="stock">
   <div class="container">
     <div class="stock-box">
+      <span id="close" onclick="this.parentNode.parentNode.remove(); return false;">X</span>
       <div class="stock-box_header">
         <img class="stock-box_header__icon" src="/img/stock/icon.svg" width="105px" height="105px" alt="icon">
       </div>
@@ -251,19 +252,38 @@
 </main>
 <section class="salle">
   <div class="container">
-    <div class="salle-fon">
-      <div class="salle-box">
-        <div class="salle-box_heading">
-          <h2>При заказе натяжного потолка<br>точечные светильники<span class="salle-box_heading__red"><br> в подарок</span></h2>
+    <div class="owl-carouse1 owl-carouse1 owl-theme">
+      <div class="salle-fon">
+        <div class="salle-box">
+          <div class="salle-box_heading">
+            <h2>При заказе натяжного потолка<br>точечные светильники<span class="salle-box_heading__red"><br> в подарок</span></h2>
+          </div>
+          <div class="salle-box_icon">
+            <img src="/img/salle/svet.svg" alt="svet">
+          </div>
         </div>
-        <div class="salle-box_icon">
-          <img src="/img/salle/svet.svg" alt="svet">
+        <div class="salle-box_btn">
+          <a data-remodal-target="open-modal" class="salle-box_br--btn open-modal">
+          <span class="salle-box_br--sp">Подробнее</span>
+          </a>
         </div>
       </div>
-      <div class="salle-box_btn">
-        <a data-remodal-target="open-modal" class="salle-box_br--btn open-modal">
-        <span class="salle-box_br--sp">Подробнее</span>
-        </a>
+      <div class="salle-box2">
+        <div class="salle-box2_header">
+          <h5 class="salle-box2_header__heading">Новогодняя Акция!!!</h5>
+          <img class="salle-box2_header__img" src="/img/stock/one_one.svg" alt="img">
+        </div>
+        <div class="salle-box2_main">
+          <h6 class="salle-box2_main__slogan">Дарим третий потолок<br>
+            В подарок!</h6>
+          <span class="salle-box2_main__tagline">МЫ СДЕЛАЕМ ВАШ ПОТОЛОК ЯРЧЕ!</span>
+        </div>
+        <div class="salle-box2_bottom">
+          <a data-remodal-target="open-modal" class="salle-box_br--btn open-modal">
+            <span class="salle-box2_bottom__btn">Записаться на<br>
+              бесплатный замер</span>
+            </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1110,3 +1130,4 @@
       emailjs.init('JZ_N27V_RT4rKlSeX');
   })();
 </script>
+<script src="/js/salle.js"></script>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
-        loop:true, //Зацикливаем слайдер
+        
         margin:5, //Отступ от картино если выводите больше 1
         nav:false, //Отключил навигацию
         autoplay:true, //Автозапуск слайдера
